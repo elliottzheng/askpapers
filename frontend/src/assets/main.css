@@ -1,0 +1,52 @@
+@import './base.css';
+
+#app {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* @media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+} */
+
+.markdown-content p{
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.markdown-content ol{
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+
+.markdown-content{
+  padding: 0; /* 清除父节点的内边距 */
+  margin: 0; /* 清除父节点的外边距 */
+  line-height: 1.2; /* 设置合理的行高 */
+  font-size: 16px; /* 设置合理的字体大小 */
+  display: block; /* 确保父节点的 display 属性合适 */
+  box-sizing: border-box; /* 确保父节点的 box-sizing 合适 */
+}
